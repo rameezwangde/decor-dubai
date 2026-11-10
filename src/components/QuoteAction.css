@@ -1,0 +1,273 @@
+.quote-action-container {
+  width: 100%;
+}
+
+.btn-studio-quote {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #A47738;
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 14px 24px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(164, 119, 56, 0.28);
+  transition: all 0.25s ease;
+}
+
+.btn-studio-quote:hover {
+  background-color: #8C632B;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(164, 119, 56, 0.35);
+}
+
+.quote-arrow {
+  font-size: 17px;
+  transition: transform 0.25s ease;
+}
+
+.btn-studio-quote:hover .quote-arrow {
+  transform: translateX(4px);
+}
+
+/* Quote Dialog Modal */
+.quote-dialog-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 18, 16, 0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeIn 0.25s ease forwards;
+}
+
+.quote-dialog-content {
+  background-color: #FAF6F0;
+  border: 1px solid #E9DED0;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 540px;
+  padding: 32px;
+  position: relative;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  animation: scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.quote-dialog-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #E9DED0;
+  background-color: #FFFFFF;
+  color: #29241F;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.quote-form-eyebrow {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: #A47738;
+  margin-bottom: 6px;
+}
+
+.quote-form-title {
+  font-family: 'Playfair Display', var(--font-serif);
+  font-size: 26px;
+  font-weight: 600;
+  color: #29241F;
+  margin-bottom: 16px;
+}
+
+.quote-summary-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E9DED0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.summary-badge {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  color: #A47738;
+  text-transform: uppercase;
+}
+
+.summary-style {
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  color: #55504A;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.field-label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  color: #38322B;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  padding: 10px 12px;
+  border: 1px solid #D9CDC0;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  color: #29241F;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: #A47738;
+  box-shadow: 0 0 0 3px rgba(164, 119, 56, 0.15);
+}
+
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-submit-quote {
+  width: 100%;
+  background-color: #A47738;
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 13px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-submit-quote:hover {
+  background-color: #8C632B;
+}
+
+.btn-whatsapp-quote {
+  width: 100%;
+  background-color: #25D366;
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-whatsapp-quote:hover {
+  background-color: #1EBE5D;
+}
+
+/* Success state */
+.quote-success-state {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.success-icon-ring {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #FAF2E8;
+  border: 2px solid #A47738;
+  color: #A47738;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px auto;
+}
+
+.success-title {
+  font-family: 'Playfair Display', var(--font-serif);
+  font-size: 24px;
+  color: #29241F;
+  margin-bottom: 8px;
+}
+
+.success-desc {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.6;
+  color: #55504A;
+  margin-bottom: 24px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 520px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .quote-dialog-content {
+    padding: 24px 18px;
+  }
+}
+

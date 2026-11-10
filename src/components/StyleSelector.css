@@ -1,0 +1,118 @@
+.style-selector-container {
+  width: 100%;
+}
+
+.section-subheading {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #29241F;
+  margin-bottom: 12px;
+}
+
+.style-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.style-card-btn {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border: 1.5px solid #E9DED0;
+  border-radius: 12px;
+  padding: 8px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  outline: none;
+}
+
+.style-card-btn:hover {
+  border-color: #A47738;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(164, 119, 56, 0.12);
+}
+
+.style-card-btn:focus-visible {
+  box-shadow: 0 0 0 3px rgba(164, 119, 56, 0.4);
+}
+
+.style-card-btn.selected {
+  border-color: #A47738;
+  background-color: #F8F3EC;
+  box-shadow: 0 4px 14px rgba(164, 119, 56, 0.2);
+}
+
+.style-thumb-box {
+  width: 100%;
+  height: 84px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 8px;
+  background-color: #EDE4D8;
+}
+
+.style-thumb-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.style-check-badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 22px;
+  height: 22px;
+  background-color: #A47738;
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.style-check-badge svg {
+  width: 14px;
+  height: 14px;
+}
+
+.style-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.style-name {
+  font-family: 'Playfair Display', var(--font-serif);
+  font-size: 15px;
+  font-weight: 600;
+  color: #29241F;
+  margin-bottom: 2px;
+}
+
+.style-sub {
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  color: #6E675F;
+  line-height: 1.35;
+}
+
+@media (max-width: 480px) {
+  .style-thumb-box {
+    height: 72px;
+  }
+  .style-name {
+    font-size: 14px;
+  }
+  .style-sub {
+    font-size: 10.5px;
+  }
+}
+

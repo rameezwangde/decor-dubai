@@ -1,0 +1,71 @@
+.customization-panel-container {
+  width: 100%;
+}
+
+.customization-groups-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.custom-group-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.custom-group-title {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  color: #55504A;
+  letter-spacing: 0.5px;
+}
+
+.swatches-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.swatch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #FFFFFF;
+  border: 1px solid #E9DED0;
+  border-radius: 20px;
+  padding: 6px 12px 6px 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.swatch-btn:hover {
+  border-color: #A47738;
+  transform: translateY(-1px);
+}
+
+.swatch-btn.active {
+  border-color: #A47738;
+  background-color: #F8F3EC;
+  box-shadow: 0 2px 8px rgba(164, 119, 56, 0.18);
+}
+
+.swatch-circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+.swatch-label {
+  font-family: var(--font-sans);
+  font-size: 11.5px;
+  font-weight: 500;
+  color: #29241F;
+  white-space: nowrap;
+}
+

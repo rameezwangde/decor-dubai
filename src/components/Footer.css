@@ -1,0 +1,388 @@
+/* ========================================================
+   PREMIUM SITE FOOTER (HOME DECOR DUBAI)
+   ======================================================== */
+.site-footer {
+  width: 100%;
+  background-color: #1A1714; /* Deep rich charcoal ground */
+  color: #E2DBD2;
+  position: relative;
+  font-family: var(--font-sans);
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------
+   Top Pre-Footer Consultation Banner
+   -------------------------------------------------------- */
+.footer-consultation-banner {
+  background: linear-gradient(135deg, #24201C 0%, #1E1B18 100%);
+  border-top: 1px solid rgba(164, 119, 56, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 56px 9%;
+}
+
+.consultation-wrapper {
+  max-width: 1272px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+.consultation-text {
+  max-width: 680px;
+}
+
+.consultation-eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #A47738;
+  margin-bottom: 10px;
+}
+
+.consultation-heading {
+  font-family: 'Playfair Display', var(--font-serif);
+  font-size: clamp(28px, 2.8vw, 40px);
+  font-weight: 500;
+  line-height: 1.2;
+  color: #FAF6F0;
+  margin-bottom: 12px;
+}
+
+.consultation-heading .highlight-bronze {
+  color: #A47738;
+  font-style: italic;
+}
+
+.consultation-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #AFA69B;
+}
+
+.consultation-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-footer-consultation {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #A47738;
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 14px 26px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 18px rgba(164, 119, 56, 0.3);
+}
+
+.btn-footer-consultation .arrow {
+  transition: transform 0.25s ease;
+  display: inline-block;
+}
+
+.btn-footer-consultation:hover {
+  background-color: #8C632B;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(164, 119, 56, 0.45);
+}
+
+.btn-footer-consultation:hover .arrow {
+  transform: translateX(4px);
+}
+
+.btn-footer-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  color: #FAF6F0;
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  font-weight: 600;
+  padding: 13px 22px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(164, 119, 56, 0.5);
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn-footer-whatsapp:hover {
+  background-color: rgba(164, 119, 56, 0.15);
+  border-color: #A47738;
+  color: #FFFFFF;
+}
+
+/* --------------------------------------------------------
+   Main Footer Columns Container
+   -------------------------------------------------------- */
+.footer-main-container {
+  max-width: 1272px;
+  margin: 0 auto;
+  padding: 64px 9% 36px 9%;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1.3fr 1.3fr 1.8fr;
+  gap: 48px;
+  margin-bottom: 54px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Brand Column */
+.footer-brand-title {
+  font-family: 'Playfair Display', var(--font-serif);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #FAF6F0;
+  text-decoration: none;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.brand-statement {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #A89E92;
+  margin-bottom: 22px;
+  max-width: 340px;
+}
+
+.brand-showroom-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  color: #D2C7BA;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 8px 12px;
+  border-radius: 8px;
+  max-width: 320px;
+}
+
+/* Column Titles */
+.footer-col-title {
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #FAF6F0;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-col-title::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 22px;
+  height: 1.5px;
+  background-color: #A47738;
+}
+
+/* Links List */
+.footer-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links-list a,
+.footer-link-btn {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: #AFA599;
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.footer-links-list a:hover,
+.footer-link-btn:hover {
+  color: #A47738;
+  transform: translateX(3px);
+}
+
+/* Newsletter Column */
+.newsletter-text {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #A89E92;
+  margin-bottom: 16px;
+}
+
+.footer-newsletter-form {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.newsletter-input {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(164, 119, 56, 0.3);
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  padding: 12px 14px;
+  font-size: 13.5px;
+  color: #FAF6F0;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.newsletter-input:focus {
+  border-color: #A47738;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.newsletter-submit-btn {
+  background-color: #A47738;
+  color: #FFFFFF;
+  border: 1px solid #A47738;
+  border-radius: 0 8px 8px 0;
+  padding: 0 18px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.newsletter-submit-btn:hover {
+  background-color: #8C632B;
+}
+
+.newsletter-subscribed-msg {
+  font-size: 13px;
+  color: #55D499;
+  background-color: rgba(85, 212, 153, 0.1);
+  border: 1px solid rgba(85, 212, 153, 0.2);
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Direct Contact Items */
+.footer-direct-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13.5px;
+  color: #D2C7BA;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-item:hover {
+  color: #A47738;
+}
+
+/* --------------------------------------------------------
+   Bottom Sub-Footer Bar
+   -------------------------------------------------------- */
+.footer-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 26px;
+  font-size: 12.5px;
+  color: #8A8177;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-legal-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-legal-links a {
+  color: #8A8177;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-legal-links a:hover {
+  color: #D2C7BA;
+}
+
+.legal-dot {
+  color: #504A43;
+}
+
+/* --------------------------------------------------------
+   RESPONSIVENESS
+   -------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-consultation-banner {
+    padding: 42px 24px;
+  }
+
+  .consultation-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-footer-consultation,
+  .btn-footer-whatsapp {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-main-container {
+    padding: 48px 24px 28px 24px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
